@@ -1,3 +1,9 @@
+import { Hero } from "./components/ui/hero";
+
 export const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
