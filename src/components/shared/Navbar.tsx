@@ -16,10 +16,10 @@ export const Navbar = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Team</a>
+          <a href="#team">Team</a>
         </li>
         <li>
-          <a href="#">FAQ</a>
+          <a href="#faq">FAQ</a>
         </li>
         <li>
           <Button

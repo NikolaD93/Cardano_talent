@@ -19,7 +19,7 @@ export const Hero = () => {
           <p className="text-sm">Read the latest from our blog</p>
           <FaArrowRightLong className="-translate-x-1 transition-all duration-200 ease-in-out group-hover:translate-x-0" />
         </div>
-        <h1 className="text-[5rem] leading-[5rem] font-black my-6">
+        <h1 className="text-[5rem] leading-[5rem] font-bold my-6">
           Unleash your{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-blue-500 bg-opacity-50">
             potential

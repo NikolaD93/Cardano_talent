@@ -1,4 +1,13 @@
-import { avatar1, avatar2, avatar3, avatar4, avatar5 } from "@/assets/images";
+import {
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
+  team1,
+  team2,
+  team3,
+} from "@/assets/images";
 
 export const members = [
   {
@@ -25,5 +34,29 @@ export const members = [
     id: "member5",
     img: avatar5,
     fallback: "avatar 5",
+  },
+];
+
+export const team = [
+  {
+    id: 1,
+    name: "Filip Blagojevic",
+    role: "Founder",
+    img: team1,
+    contact: "https://www.linkedin.com/in/filipblagojevic/",
+  },
+  {
+    id: 2,
+    name: "Filip Srdoc",
+    role: "Founder",
+    img: team2,
+    contact: "https://www.linkedin.com/in/filip-srdoc/",
+  },
+  {
+    id: 3,
+    name: "Djordje Stojmenovic",
+    role: "Partner",
+    img: team3,
+    contact: "https://www.linkedin.com/in/djordjestojmenovic/",
   },
 ];
