@@ -5,7 +5,6 @@ import { members } from "@/constants";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Lottie from "lottie-react";
 import scroll from "@/assets/images/scroll.json";
-import { Navbar } from "../shared/Navbar";
 
 export const Hero = () => {
   const style = {
@@ -13,9 +12,8 @@ export const Hero = () => {
     color: "white",
   };
   return (
-    <div className="hero-wrapper relative container ">
-      <Navbar />
-      <div className="text-center mt-[80px]">
+    <div className="hero-wrapper relative container">
+      <div className="text-center pt-[80px]">
         <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 max-w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
           <p className="text-sm">Read the latest from our blog</p>

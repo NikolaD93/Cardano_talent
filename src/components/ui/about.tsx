@@ -5,8 +5,9 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="container my-[100px] flex items-center gap-20"
+      className="container my-[100px] flex items-center gap-20 relative"
     >
+      <div className="absolute -z-[2] w-[40%] h-[40%] -top-[120px] left-[50%] translate-x-[-50%] translate-y-[-50%] blue__gradient"></div>
       <div className="flex-[50%]">
         <img
           className="w-[460px] h-auto mx-auto"

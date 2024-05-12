@@ -3,8 +3,7 @@ import { Button } from "../ui/button";
 
 export const Navbar = () => {
   return (
-    <nav className="relative flex justify-between items-center pt-8">
-      <div className="absolute top-[-50px] z-[-1] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[500px] h-[275px] bg-accent blue-gradient"></div>
+    <nav className="px-[4rem] py-4 backdrop-blur-md border-b border-white/20 flex justify-between items-center sticky top-0 z-10">
       <div className="flex items-center gap-3">
         <img src={logo} alt="cardano talent logo" />
         <p className="uppercase font-semibold text-lg">Cardano talent</p>
