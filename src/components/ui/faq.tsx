@@ -12,7 +12,7 @@ export const Faq = () => {
       <h2 className="text-[3rem] font-bold text-center">
         Frequently asked questions
       </h2>
-      <p className="text-center mt-8 mb-[140px] max-w-[600px] mx-auto">
+      <p className="text-center text-textColor mt-8 mb-[140px] max-w-[600px] mx-auto">
         Let’s check your hash rate to see how much you will earn today.
         Exercitation veniam consequat sunt nostrud amet.
       </p>
@@ -28,7 +28,7 @@ export const Faq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>Is it accessible?</AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="text-textColor">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
                 itaque error dolor magnam assumenda ad saepe sint pariatur
                 maiores fuga!
@@ -36,7 +36,7 @@ export const Faq = () => {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>Is it styled?</AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="text-textColor">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Tempore velit, soluta dolor facere praesentium et quisquam
                 quaerat sed necessitatibus excepturi, illum veritatis! Illum nam
@@ -48,7 +48,7 @@ export const Faq = () => {
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>Is it animated?</AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="text-textColor">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                 vel similique sunt vitae minus eaque ipsum totam, quod ipsa odio
                 iste voluptatem libero eius nulla neque obcaecati tenetur

@@ -17,7 +17,7 @@ export const About = () => {
       </div>
       <div className="flex-[50%]">
         <h2 className="text-[3rem] font-bold">Why choose us</h2>
-        <p className="mt-8 mb-12">
+        <p className="mt-8 mb-12 text-textColor">
           Experience the difference in job hunting. Inside our Discord
           community, you can share your CV directly with recruiters, engage in
           industry discussions, access invaluable resources, and receive

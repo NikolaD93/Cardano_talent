@@ -6,7 +6,7 @@ export const Team = () => {
   return (
     <section id="team" className="container my-[150px] relative">
       <h2 className="text-[3rem] font-bold text-center">This is our team</h2>
-      <p className="text-center mt-8 mb-[140px] max-w-[600px] mx-auto">
+      <p className="text-center text-textColor mt-8 mb-[140px] max-w-[600px] mx-auto">
         Let’s check your hash rate to see how much you will earn today.
         Exercitation veniam consequat sunt nostrud amet.
       </p>

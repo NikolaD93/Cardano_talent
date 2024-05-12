@@ -16,7 +16,7 @@ export const Newsletter = () => {
         <div className="flex relative">
           <Input type="email" placeholder="Enter your email" required />
           <Button
-            className="bg-white rounded-full text-primary font-bold w-[130px] h-[90%] absolute right-1 top-[3px]"
+            className="bg-white rounded-full text-primary font-bold w-[130px] h-[56px] absolute right-[5px] top-[5px] hover:bg-primary hover:text-white"
             variant="ghost"
             type="submit"
           >

@@ -1,6 +1,5 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -11,10 +10,21 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1300px",
+      padding: {
+        DEFAULT: "2rem",
+        sm: "1rem",
+        md: "1.5rem",
+        lg: "2rem",
+        xl: "2.5rem",
+        '2xl': "6rem",
       },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      '2xl': "1536px",
     },
     extend: {
       colors: {
@@ -51,6 +61,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        textColor: "hsl(var(--text-color))",
       },
       fontFamily: {
         sans: ['Geist', 'sans-serif'],
@@ -84,4 +95,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
