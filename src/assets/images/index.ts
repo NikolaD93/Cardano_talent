@@ -5,10 +5,12 @@ import avatar4 from "./avatar4.jpg";
 import avatar5 from "./avatar5.jpg";
 import frame from "./frame.png";
 import logo from "./logo.svg";
-import about from "./about.png";
+import about from "./about.svg";
 import team1 from "./team1.png";
 import team2 from "./team2.png";
 import team3 from "./team3.png";
+import faq from "./faq.svg";
+import adaLogo from "./ada_logo.svg";
 
 export {
   avatar1,
@@ -22,4 +24,6 @@ export {
   team1,
   team2,
   team3,
+  faq,
+  adaLogo,
 };

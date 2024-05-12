@@ -26,7 +26,7 @@ export const Hero = () => {
           </span>{" "}
           with <br /> our matching platform
         </h1>
-        <p className="text-[#aaaaaa] text-[1.125rem] max-w-[600px] mx-auto">
+        <p className="text-[#aaaaaa] text-lg max-w-[600px] mx-auto">
           At Cardano Talent, we understand that in the rapidly evolving field of
           blockchain and web3, finding the right talent is paramount.
         </p>

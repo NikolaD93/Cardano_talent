@@ -3,6 +3,7 @@ import { Hero } from "./components/ui/hero";
 import { Navbar } from "@/components/shared/Navbar";
 import { Team } from "./components/ui/team";
 import { Faq } from "./components/ui/faq";
+import { Newsletter } from "./components/ui/newsletter";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <About />
       <Team />
       <Faq />
+      <Newsletter />
     </div>
   );
 };

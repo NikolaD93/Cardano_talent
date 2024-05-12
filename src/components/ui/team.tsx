@@ -4,7 +4,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export const Team = () => {
   return (
-    <section id="team" className="container my-[100px]">
+    <section id="team" className="container my-[150px] relative">
       <h2 className="text-[3rem] font-bold text-center">This is our team</h2>
       <p className="text-center mt-8 mb-[140px] max-w-[600px] mx-auto">
         Let’s check your hash rate to see how much you will earn today.
@@ -30,6 +30,7 @@ export const Team = () => {
           </div>
         ))}
       </div>
+      <div className="absolute -z-[2] w-[40%] h-[40%] -bottom-[150px] left-[50%] translate-x-[-50%] translate-y-[-50%] blue__gradient"></div>
     </section>
   );
 };
