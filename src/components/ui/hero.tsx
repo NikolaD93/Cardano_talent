@@ -1,4 +1,3 @@
-import { Header } from "./header";
 import { Badge } from "@/components/ui/badge";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CtaButton } from "../shared/CtaButton";
@@ -6,6 +5,7 @@ import { members } from "@/constants";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Lottie from "lottie-react";
 import scroll from "@/assets/images/scroll.json";
+import { Navbar } from "../shared/Navbar";
 
 export const Hero = () => {
   const style = {
@@ -13,8 +13,8 @@ export const Hero = () => {
     color: "white",
   };
   return (
-    <div className="hero-wrapper relative container overflow-hidden">
-      <Header />
+    <div className="hero-wrapper relative container ">
+      <Navbar />
       <div className="text-center mt-[80px]">
         <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 max-w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
@@ -34,11 +34,12 @@ export const Hero = () => {
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <CtaButton className="mt-[100px] mb-[140px]">
-          Join our discord server
-        </CtaButton>
+        <CtaButton
+          className="mt-[100px] mb-[140px]"
+          children=" Join our discord server"
+        />
       </div>
-      <div className="flex items-start justify-between">
+      <div className="grid grid-cols-3">
         <div className="flex flex-col gap-2">
           <div className="flex -space-x-2">
             {members.map((member) => {
@@ -52,7 +53,12 @@ export const Hero = () => {
           </div>
           <p className="text-sm ml-2">500+ discord members</p>
         </div>
-        <Lottie animationData={scroll} loop={true} style={style} />
+        <Lottie
+          className="justify-self-center"
+          animationData={scroll}
+          loop={true}
+          style={style}
+        />
       </div>
     </div>
   );

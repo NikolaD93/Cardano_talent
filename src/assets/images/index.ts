@@ -5,5 +5,6 @@ import avatar4 from "./avatar4.jpg";
 import avatar5 from "./avatar5.jpg";
 import frame from "./frame.png";
 import logo from "./logo.svg";
+import about from "./about.png";
 
-export { avatar1, avatar2, avatar3, avatar4, avatar5, frame, logo };
+export { avatar1, avatar2, avatar3, avatar4, avatar5, frame, logo, about };

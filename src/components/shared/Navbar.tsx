@@ -1,7 +1,7 @@
 import logo from "@/assets/images/logo.svg";
-import { Button } from "./button";
+import { Button } from "../ui/button";
 
-export const Header = () => {
+export const Navbar = () => {
   return (
     <nav className="relative flex justify-between items-center pt-8">
       <div className="absolute top-[-50px] z-[-1] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[500px] h-[275px] bg-accent blue-gradient"></div>
@@ -14,7 +14,7 @@ export const Header = () => {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="#">Team</a>
