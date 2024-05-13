@@ -26,7 +26,10 @@ export const About = () => {
           recruiters, engage in industry discussions, access invaluable
           resources, and receive personalized career advice.
         </p>
-        <CtaButton className="" children="Join our discord server" />
+        <CtaButton
+          className="bg-[length:200%_100%] bg-[linear-gradient(110deg,#044fc8,45%,#477dd5,55%,#044fc8)] animate-shimmer"
+          children="Join our discord community"
+        />
       </div>
     </section>
   );

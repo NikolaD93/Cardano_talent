@@ -13,7 +13,7 @@ export const Hero = () => {
   };
   return (
     <div className="hero-wrapper relative container">
-      <div className="text-center pt-[80px]">
+      <div className="text-center pt-[86px]">
         <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 max-w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
           <p className="text-sm">Read the latest from our blog</p>
@@ -33,8 +33,8 @@ export const Hero = () => {
       </div>
       <div className="flex items-center justify-center">
         <CtaButton
-          className="mt-[100px] mb-[140px]"
-          children=" Join our discord server"
+          className="mt-[100px] mb-[140px] bg-[length:200%_100%] bg-[linear-gradient(110deg,#044fc8,45%,#477dd5,55%,#044fc8)] animate-shimmer"
+          children=" Join our discord community"
         />
       </div>
       <div className="grid grid-cols-3">

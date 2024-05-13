@@ -8,23 +8,31 @@ export const Navbar = () => {
         <img src={logo} alt="cardano talent logo" />
         <p className="uppercase font-semibold text-lg">Cardano talent</p>
       </div>
-      <ul className="flex items-center gap-10">
+      <ul className="flex items-end gap-10">
         <li>
-          <a href="#">Home</a>
+          <a href="#" data-replace="Home" className="text-swap">
+            <span>Home</span>
+          </a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" data-replace="About" className="text-swap">
+            <span>About</span>
+          </a>
         </li>
         <li>
-          <a href="#team">Team</a>
+          <a href="#team" data-replace="Team" className="text-swap">
+            <span>Team</span>
+          </a>
         </li>
         <li>
-          <a href="#faq">FAQ</a>
+          <a href="#faq" data-replace="FAQ" className="text-swap">
+            <span>FAQ</span>
+          </a>
         </li>
         <li>
           <Button
             variant="ghost"
-            className="bg-white text-primary font-bold hover:bg-white"
+            className="bg-white text-primary font-bold transition duration-300 hover:bg-white hover:ring ring-textColor"
           >
             Blog
           </Button>
