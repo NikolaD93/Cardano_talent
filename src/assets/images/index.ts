@@ -10,6 +10,8 @@ import team2 from "./team2.png";
 import team3 from "./team3.png";
 import faq from "./faq.svg";
 import adaLogo from "./ada_logo.svg";
+import close from "./close.svg";
+import menu from "./menu.svg";
 
 export {
   avatar1,
@@ -24,4 +26,6 @@ export {
   team3,
   faq,
   adaLogo,
+  close,
+  menu,
 };

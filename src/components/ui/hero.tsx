@@ -7,39 +7,35 @@ import Lottie from "lottie-react";
 import scroll from "@/assets/images/scroll.json";
 
 export const Hero = () => {
-  const style = {
-    height: 50,
-    color: "white",
-  };
   return (
     <div className="hero-wrapper relative container">
-      <div className="text-center pt-[86px]">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-primary [mask-image:radial-gradient(circle_at_center,transparent_50%,black)]"></div>
-        <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 max-w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
+      <div className="text-center pt-[40px] md:pt-[86px]">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-primary [mask-image:radial-gradient(circle_at_center,transparent_90%,black)] lg:[mask-image:radial-gradient(circle_at_center,transparent_50%,black)]"></div>
+        <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 w-[270px] md:w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
-          <p className="text-sm">Read the latest from our blog</p>
+          <p className="text-xs md:text-sm">Read the latest from our blog</p>
           <FaArrowRightLong className="-translate-x-1 transition-all duration-200 ease-in-out group-hover:translate-x-0" />
         </div>
-        <h1 className="text-[5rem] leading-[5rem] font-bold my-6">
+        <h1 className="text-[3rem] leading-[3.4rem] lg:text-[5rem] lg:leading-[5rem] font-bold my-6">
           Unleash your{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-blue-500 bg-opacity-50">
             potential
           </span>{" "}
           with <br /> our matching platform
         </h1>
-        <p className="text-textColor text-lg max-w-[600px] mx-auto">
+        <p className="text-textColor text-sm lg:text-lg max-w-[600px] mx-auto">
           At Cardano Talent, we understand that in the rapidly evolving field of
           blockchain and web3, finding the right talent is paramount.
         </p>
       </div>
       <div className="flex items-center justify-center">
         <CtaButton
-          className="mt-[100px] mb-[140px] bg-[length:200%_100%] bg-[linear-gradient(110deg,#044fc8,45%,#477dd5,55%,#044fc8)] animate-shimmer"
+          className="my-[60px] lg:mt-[100px] lg:mb-[140px] bg-[length:200%_100%] bg-[linear-gradient(110deg,#044fc8,45%,#477dd5,55%,#044fc8)] animate-shimmer"
           children=" Join our discord community"
         />
       </div>
-      <div className="grid grid-cols-3">
-        <div className="flex flex-col gap-3">
+      <div className="lg:grid lg:grid-cols-3">
+        <div className="flex flex-col gap-3 items-center lg:items-start">
           <div className="flex -space-x-2">
             {members.map((member) => {
               return (
@@ -50,13 +46,12 @@ export const Hero = () => {
               );
             })}
           </div>
-          <p className="text-sm ml-2 z-10">500+ discord members</p>
+          <p className="text-sm ml-2 lg:z-10">500+ discord members</p>
         </div>
         <Lottie
-          className="justify-self-center"
+          className="justify-self-center mt-10 h-[40px] lg:mt-0 lg:h-[50px]"
           animationData={scroll}
           loop={true}
-          style={style}
         />
       </div>
     </div>

@@ -8,21 +8,22 @@ import {
 
 export const Faq = () => {
   return (
-    <section id="faq" className="container my-[150px]">
-      <h2 className="text-[3rem] font-bold text-center">
+    <section id="faq" className="container my-[120px] lg:my-[150px]">
+      <h2 className="text-[2.5rem] leading-[3rem] text-center lg:text-[3rem] font-bold mb-[80px] lg:mt-[100px]">
         Frequently asked questions
       </h2>
-      <p className="text-center text-textColor mt-8 mb-[140px] max-w-[600px] mx-auto">
+      {/* <p className="text-center text-textColor mt-8 mb-[100px]  max-w-[600px] mx-auto">
         Let’s check your hash rate to see how much you will earn today.
         Exercitation veniam consequat sunt nostrud amet.
-      </p>
-      <div
-        className="flex
-        items-start"
-      >
-        <div className="flex-[50%]">
-          <h4 className="mb-10 text-lg">
+      </p> */}
+      <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-0">
+        <div className="lg:flex-[50%]">
+          <h4 className="mb-10 text-lg hidden lg:block">
             Have a question that is not answered? <br /> You can contact us on
+            <span className="font-bold"> cardanotalent@gmail.com</span>
+          </h4>
+          <h4 className="mb-10 text-base text-center lg:hidden">
+            Have a question that is not answered? You can contact us on
             <span className="font-bold"> cardanotalent@gmail.com</span>
           </h4>
           <Accordion type="single" collapsible className="w-full">
@@ -58,8 +59,12 @@ export const Faq = () => {
             </AccordionItem>
           </Accordion>
         </div>
-        <div className="flex-[50%]">
-          <img className="w-[460px] h-auto mx-auto" src={faq} alt="" />
+        <div className="lg:flex-[50%]">
+          <img
+            className="w-[300px] lg:w-[460px] h-auto mx-auto"
+            src={faq}
+            alt=""
+          />
         </div>
       </div>
     </section>
