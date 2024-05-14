@@ -14,6 +14,7 @@ export const Hero = () => {
   return (
     <div className="hero-wrapper relative container">
       <div className="text-center pt-[86px]">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-primary [mask-image:radial-gradient(circle_at_center,transparent_50%,black)]"></div>
         <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 max-w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
           <p className="text-sm">Read the latest from our blog</p>
@@ -49,7 +50,7 @@ export const Hero = () => {
               );
             })}
           </div>
-          <p className="text-sm ml-2">500+ discord members</p>
+          <p className="text-sm ml-2 z-10">500+ discord members</p>
         </div>
         <Lottie
           className="justify-self-center"
