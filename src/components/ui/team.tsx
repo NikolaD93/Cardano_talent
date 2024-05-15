@@ -12,14 +12,14 @@ export const Team = () => {
         Let’s check your hash rate to see how much you will earn today.
         Exercitation veniam consequat sunt nostrud amet.
       </p>
-      <div className="flex flex-col gap-20 lg:flex-row xl:gap-6">
+      <div className="flex flex-col gap-[100px] lg:flex-row lg:gap-6">
         {team.map((item) => (
           <div
             key={item.id}
             className="bg-[#252540c2] rounded-md flex flex-col items-center flex-[33%] pb-6"
           >
             <img
-              className="w-[80px] lg:w-[100px] h-auto rounded-full ring ring-4 ring-white -mt-[40px] lg:-mt-[50px]"
+              className="w-[90px] lg:w-[100px] h-auto rounded-full ring ring-4 ring-white -mt-[40px] lg:-mt-[50px]"
               src={item.img}
               alt={item.name}
             />
