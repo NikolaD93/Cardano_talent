@@ -9,6 +9,33 @@ import {
   team3,
 } from "@/assets/images";
 
+export const navLinks = [
+  {
+    to: "#",
+    name: "Home",
+    className: "text-swap",
+  },
+  {
+    to: "#about",
+    name: "About",
+    className: "text-swap",
+  },
+  {
+    to: "#team",
+    name: "Team",
+    className: "text-swap",
+  },
+  {
+    to: "#faq",
+    name: "FAQ",
+    className: "text-swap",
+  },
+  {
+    to: "blog",
+    name: "Blog",
+  },
+];
+
 export const members = [
   {
     id: "member1",

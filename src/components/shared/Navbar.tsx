@@ -1,10 +1,21 @@
 import logo from "@/assets/images/logo.svg";
 import { Button } from "../ui/button";
 import { useState } from "react";
-import { close, menu } from "@/assets/images";
+import { motion, AnimatePresence } from "framer-motion";
+import { navLinks } from "@/constants";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  const itemVariants = {
+    hidden: { y: 10, opacity: 0 },
+    visible: (custom: any) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom },
+    }),
+  };
+
   return (
     <nav className="container py-4 backdrop-blur-md border-b border-white/20 flex justify-between items-center sticky top-0 z-10">
       <div className="flex items-center gap-2 xl:gap-3">
@@ -13,81 +24,98 @@ export const Navbar = () => {
           Cardano talent
         </p>
       </div>
-      <ul className="hidden md:flex items-end gap-10">
-        <li>
-          <a href="#" data-replace="Home" className="text-swap">
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#about" data-replace="About" className="text-swap">
-            <span>About</span>
-          </a>
-        </li>
-        <li>
-          <a href="#team" data-replace="Team" className="text-swap">
-            <span>Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#faq" data-replace="FAQ" className="text-swap">
-            <span>FAQ</span>
-          </a>
-        </li>
-        <li>
-          <Button
-            variant="ghost"
-            className="bg-white text-primary font-bold transition duration-300 hover:bg-white hover:ring ring-textColor"
-          >
-            Blog
-          </Button>
-        </li>
-      </ul>
-      <div className="md:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain z-50"
-          onClick={() => setToggle((prev) => !prev)}
-        />
-
-        <div
-          className={`${
-            toggle ? "flex" : "hidden"
-          } py-16 bg-accent absolute top-0 left-0 w-full sidebar z-30`}
-        >
-          <ul className="list-none flex flex-col space-y-4 justify-end items-center flex-1">
-            <li>
-              <a href="#" data-replace="Home" className="text-swap">
-                <span>Home</span>
+      <ul className="hidden list-none md:flex items-end gap-10">
+        {navLinks.map((link, id) => {
+          return link.name !== "Blog" ? (
+            <li key={id}>
+              <a
+                href={link.to}
+                data-replace={link.name}
+                className={link.className}
+              >
+                <span>{link.name}</span>
               </a>
             </li>
-            <li>
-              <a href="#about" data-replace="About" className="text-swap">
-                <span>About</span>
-              </a>
-            </li>
-            <li>
-              <a href="#team" data-replace="Team" className="text-swap">
-                <span>Team</span>
-              </a>
-            </li>
-            <li>
-              <a href="#faq" data-replace="FAQ" className="text-swap">
-                <span>FAQ</span>
-              </a>
-            </li>
+          ) : (
             <li>
               <Button
+                key={id}
                 variant="ghost"
                 className="bg-white text-primary font-bold transition duration-300 hover:bg-white hover:ring ring-textColor"
               >
-                Blog
+                {link.name}
               </Button>
             </li>
-          </ul>
+          );
+        })}
+      </ul>
+      <button
+        type="button"
+        className="md:hidden flex flex-1 justify-end items-center z-50"
+        onClick={() => setToggle((prev) => !prev)}
+      >
+        <div
+          className={`${
+            toggle ? "tham-active" : "null"
+          } tham tham-e-spin tham-w-6`}
+        >
+          <div className="tham-box">
+            <div className="tham-inner bg-white" />
+          </div>
         </div>
-      </div>
+      </button>
+      <AnimatePresence>
+        {toggle && (
+          <motion.div
+            initial={{ y: -300 }}
+            animate={{ y: 0 }}
+            exit={{ y: -1000, opacity: 1, transition: { duration: 0.8 } }}
+            transition={{
+              type: "spring",
+              bounce: 0,
+              duration: 0.5,
+            }}
+            className="flex md:hidden py-16 bg-accent absolute top-0 right-0 w-full z-30"
+          >
+            <ul className="list-none flex flex-col space-y-8 uppercase font-semibold justify-end items-center flex-1">
+              {navLinks.map((link, id) => {
+                return link.name !== "Blog" ? (
+                  <motion.li
+                    variants={itemVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    custom={(id + 1) * 0.2}
+                    key={id}
+                  >
+                    <a href={link.to} onClick={() => setToggle(false)}>
+                      {link.name}
+                    </a>
+                  </motion.li>
+                ) : (
+                  <motion.li
+                    variants={itemVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    custom={(id + 1) * 0.2}
+                    key={id}
+                  >
+                    <Button
+                      variant="ghost"
+                      size="lg"
+                      className="bg-white text-primary uppercase font-bold transition duration-300 hover:bg-white hover:ring ring-textColor"
+                      onClick={() => setToggle(false)}
+                    >
+                      {link.name}
+                    </Button>
+                  </motion.li>
+                );
+              })}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

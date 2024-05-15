@@ -109,6 +109,7 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
   plugins: [addVariablesForColors],
+  plugins: [require('tailwind-hamburgers')],
 };
 
 
