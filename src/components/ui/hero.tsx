@@ -5,11 +5,16 @@ import { members } from "@/constants";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Lottie from "lottie-react";
 import scroll from "@/assets/images/scroll.json";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
     <div className="hero-wrapper relative container">
-      <div className="text-center pt-[40px] md:pt-[86px]">
+      <motion.div
+        whileInView={{ opacity: [0, 0.5, 1] }}
+        transition={{ duration: 0.5 }}
+        className="text-center pt-[40px] md:pt-[86px]"
+      >
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-primary [mask-image:radial-gradient(circle_at_center,transparent_90%,black)] lg:[mask-image:radial-gradient(circle_at_center,transparent_50%,black)]"></div>
         <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 w-[270px] md:w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
@@ -27,14 +32,24 @@ export const Hero = () => {
           At Cardano Talent, we understand that in the rapidly evolving field of
           blockchain and web3, finding the right talent is paramount.
         </p>
-      </div>
-      <div className="flex items-center justify-center">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="flex items-center justify-center"
+      >
         <CtaButton
           className="my-[60px] lg:mt-[100px] lg:mb-[140px] bg-[length:200%_100%] bg-[linear-gradient(110deg,#044fc8,45%,#477dd5,55%,#044fc8)] animate-shimmer"
           children=" Join our discord community"
+          link="https://discord.com/invite/5U4Z3r2NJb"
         />
-      </div>
-      <div className="lg:grid lg:grid-cols-3">
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 0.5, 1] }}
+        transition={{ duration: 0.5 }}
+        className="lg:grid lg:grid-cols-3"
+      >
         <div className="flex flex-col gap-3 items-center lg:items-start">
           <div className="flex -space-x-2">
             {members.map((member) => {
@@ -53,7 +68,7 @@ export const Hero = () => {
           animationData={scroll}
           loop={true}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
