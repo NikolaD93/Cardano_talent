@@ -89,42 +89,12 @@ export const team = [
         logo: FaLinkedin,
         link: "https://www.linkedin.com/in/filip-srdoc/",
       },
-      {
-        logo: FaInstagram,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Filip Srdoc",
-    role: "Founder",
-    about:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, delectus.",
-    img: team2,
-    socials: [
-      {
-        logo: FaDiscord,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
-        logo: FaXTwitter,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
-        logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
-        logo: FaInstagram,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
     ],
   },
   {
     id: 3,
     name: "Djordje Stojmenovic",
-    role: "Partner",
+    role: "Founder",
     about:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, delectus.",
     img: team3,
@@ -139,10 +109,6 @@ export const team = [
       },
       {
         logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
-        logo: FaInstagram,
         link: "https://www.linkedin.com/in/filip-srdoc/",
       },
     ],
@@ -167,10 +133,6 @@ export const team = [
         logo: FaLinkedin,
         link: "https://www.linkedin.com/in/filip-srdoc/",
       },
-      {
-        logo: FaInstagram,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
     ],
   },
   {
@@ -191,10 +153,6 @@ export const team = [
       },
       {
         logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
-        logo: FaInstagram,
         link: "https://www.linkedin.com/in/filip-srdoc/",
       },
     ],
