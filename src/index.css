@@ -111,11 +111,6 @@
     );
     filter: blur(120px);
   }
-  @media screen and (max-width: 640px) {
-    .blue__gradient {
-      filter: blur(100px);
-    }
-  }
   .text-swap {
     overflow: hidden;
     position: relative;

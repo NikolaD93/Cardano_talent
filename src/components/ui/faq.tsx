@@ -11,7 +11,7 @@ export const Faq = () => {
   return (
     <MotionWrapper>
       <section id="faq" className="container my-[120px] lg:my-[150px]">
-        <h2 className="text-[2.5rem] leading-[3rem] text-center lg:text-[3rem] font-bold mb-[80px] lg:mt-[100px]">
+        <h2 className="text-[2.5rem] leading-[3rem] text-center lg:text-[3rem] font-bold mb-[80px] lg:mb-[100px]">
           Frequently asked questions
         </h2>
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-0">

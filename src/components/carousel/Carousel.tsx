@@ -35,10 +35,10 @@ export const Carousel: React.FC<PropType> = (props) => {
           {team.map((item) => (
             <div className="embla__slide" key={item.id}>
               <CardContainer>
-                <CardBody className="border border-white/20 rounded-md p-6 relative transition duration-300 hover:shadow-[0px_33px_66px_-35px_rgba(4,79,200,0.67)] hover:shadow-[0px 22px 37px -11px rgba(4,79,200,0.91)]">
+                <CardBody className="border border-white/20 rounded-md p-6 relative transition duration-300 hover:shadow-[0px_26px_46px_-35px_rgba(4,79,200,0.67)] hover:shadow-[0px 22px 37px -11px rgba(4,79,200,0.91)]">
                   <CardItem translateZ="60" className="w-full">
                     <img
-                      className="rounded-sm h-[200px] w-full object-cover object-top"
+                      className="rounded-sm h-[240px] lg:h-[200px] w-full object-cover object-top"
                       src={item.img}
                       alt={item.name}
                     />

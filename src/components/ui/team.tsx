@@ -15,11 +15,11 @@ export const Team = () => {
         <h2 className="text-[2.5rem] text-center lg:text-[3rem] font-bold">
           This is our team
         </h2>
-        <p className="text-center text-textColor mt-8 max-w-[600px] mx-auto">
+        <p className="text-center text-textColor mt-8 mb-[64px] lg:mb-[84px] max-w-[600px] mx-auto">
           Let’s check your hash rate to see how much you will earn today.
           Exercitation veniam consequat sunt nostrud amet.
         </p>
-        <div>
+        <div className="relative">
           <Carousel options={OPTIONS} />
         </div>
       </section>
