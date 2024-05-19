@@ -5,7 +5,7 @@ import { MotionWrapper } from "../shared/MotionWrapper";
 
 export const Newsletter = () => {
   return (
-    <MotionWrapper>
+    <MotionWrapper className="">
       <section className="lg:container mb-[40px] lg:mb-[60px] relative">
         <div className="bg-accent lg:rounded-md flex flex-col items-center justify-around py-8 px-6 lg:flex-row lg:py-4 lg:px-0">
           <div className="text-center lg:text-left">

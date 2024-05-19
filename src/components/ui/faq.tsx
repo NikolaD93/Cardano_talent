@@ -9,7 +9,7 @@ import { MotionWrapper } from "../shared/MotionWrapper";
 
 export const Faq = () => {
   return (
-    <MotionWrapper>
+    <MotionWrapper className="">
       <section id="faq" className="container my-[120px] lg:my-[150px]">
         <h2 className="text-[2.5rem] leading-[3rem] text-center lg:text-[3rem] font-bold mb-[80px] lg:mb-[100px]">
           Frequently asked questions

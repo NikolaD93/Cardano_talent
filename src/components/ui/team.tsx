@@ -7,7 +7,7 @@ const OPTIONS: EmblaOptionsType = { align: "start" };
 
 export const Team = () => {
   return (
-    <MotionWrapper>
+    <MotionWrapper className="">
       <section
         id="team"
         className="container my-[120px] lg:my-[150px] relative"
