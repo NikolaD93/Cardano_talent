@@ -14,11 +14,6 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export const navLinks = [
   {
-    to: "#",
-    name: "Home",
-    className: "text-swap",
-  },
-  {
     to: "#about",
     name: "About",
     className: "text-swap",
