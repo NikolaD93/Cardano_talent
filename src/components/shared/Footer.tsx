@@ -9,7 +9,7 @@ export const Footer = () => {
         <ul className="flex gap-6">
           {footerLinks.map((link, id) => {
             return (
-              <li>
+              <li key={id}>
                 <Link to={link.to} target="_blank">
                   <link.logo className="text-xl text-textColor transition duration-300 hover:text-white focus:text-white" />
                 </Link>
