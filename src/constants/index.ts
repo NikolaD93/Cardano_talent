@@ -152,3 +152,18 @@ export const team = [
     ],
   },
 ];
+
+export const footerLinks = [
+  {
+    to: "https://discord.com/invite/5U4Z3r2NJb",
+    logo: FaDiscord,
+  },
+  {
+    to: "https://twitter.com/CardanoTalent",
+    logo: FaXTwitter,
+  },
+  {
+    to: "https://www.linkedin.com/company/cardanotalent",
+    logo: FaLinkedin,
+  },
+];

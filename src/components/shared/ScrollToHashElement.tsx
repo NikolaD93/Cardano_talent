@@ -7,7 +7,7 @@ export const ScrollToHashElement = () => {
   useLayoutEffect(() => {
     const { hash } = location;
 
-    const removeHashCharacter = (str) => {
+    const removeHashCharacter = (str: any) => {
       const result = str.slice(1);
       return result;
     };

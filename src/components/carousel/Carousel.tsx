@@ -9,6 +9,7 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import { team } from "@/constants";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+import { Link } from "react-router-dom";
 
 type PropType = {
   options?: EmblaOptionsType;
@@ -63,9 +64,9 @@ export const Carousel: React.FC<PropType> = (props) => {
                         {item.socials.map((social, id) => {
                           return (
                             <li key={id}>
-                              <a href={social.link} target="_blank">
+                              <Link to={social.link} target="_blank">
                                 <social.logo className="text-xl text-textColor transition duration-300 hover:text-white focus:text-white" />
-                              </a>
+                              </Link>
                             </li>
                           );
                         })}
