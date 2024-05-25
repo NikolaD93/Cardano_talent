@@ -1,3 +1,4 @@
+import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
@@ -11,6 +12,7 @@ import {
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { supabase } from "@/config/supabaseClient";
 
 export const NewsletterForm = () => {
   const formSchema = z.object({
@@ -24,9 +26,23 @@ export const NewsletterForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("Subscibed succesfully!");
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const { error } = await supabase
+        .from("emails")
+        .insert({ email: values.email });
+
+      if (error) {
+        toast.error(`${values.email} is already subscribed!`);
+        console.log(error);
+      } else {
+        toast.success("Subscribed successfully!");
+        form.reset();
+      }
+    } catch (err) {
+      toast.error("An unexpected error occurred. Please try again.");
+      console.error(err);
+    }
   }
   return (
     <div className="flex relative z-10">
@@ -44,13 +60,23 @@ export const NewsletterForm = () => {
               </FormItem>
             )}
           />
-          <Button
-            className="bg-white rounded-full text-primary font-bold lg:w-[130px] h-[46px] lg:h-[56px] absolute right-[5px] bottom-[5px] transition duration-300 hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
-            variant="ghost"
-            type="submit"
-          >
-            Subscribe
-          </Button>
+          {form.formState.isSubmitting ? (
+            <Button
+              disabled
+              className="bg-white rounded-full text-primary font-bold lg:w-[130px] h-[46px] lg:h-[56px] absolute right-[5px] bottom-[5px] transition duration-300 hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+            >
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Sending
+            </Button>
+          ) : (
+            <Button
+              className="bg-white rounded-full text-primary font-bold lg:w-[130px] h-[46px] lg:h-[56px] absolute right-[5px] bottom-[5px] transition duration-300 hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+              variant="ghost"
+              type="submit"
+            >
+              Subscribe
+            </Button>
+          )}
         </form>
       </Form>
     </div>
