@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Lottie from "lottie-react";
 import scroll from "@/assets/images/scroll.json";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -16,11 +17,14 @@ export const Hero = () => {
         className="text-center pt-[40px] md:pt-[86px]"
       >
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-primary [mask-image:radial-gradient(circle_at_center,transparent_90%,black)] lg:[mask-image:radial-gradient(circle_at_center,transparent_50%,black)]"></div>
-        <div className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 w-[270px] md:w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]">
+        <Link
+          to="blog"
+          className="bg-[rgba(255,255,255,0.1)] rounded-full p-1 w-[270px] md:w-[300px] mx-auto flex gap-3 items-center group border border-[rgba(255,255,255,.1)] duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.2)]"
+        >
           <Badge className="bg-white text-primary font-bold">NEW</Badge>
           <p className="text-xs md:text-sm">Read the latest from our blog</p>
           <FaArrowRightLong className="-translate-x-1 transition-all duration-200 ease-in-out group-hover:translate-x-0" />
-        </div>
+        </Link>
         <h1 className="text-[3rem] leading-[3.4rem] lg:text-[5rem] lg:leading-[5rem] font-bold my-6">
           Unleash your{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-blue-500 bg-opacity-50">
