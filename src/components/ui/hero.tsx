@@ -65,7 +65,7 @@ export const Hero = () => {
               );
             })}
           </div>
-          <p className="text-sm ml-2 lg:z-10">500+ discord members</p>
+          <p className="text-sm ml-2 lg:ml-6 lg:z-10">500+ discord members</p>
         </div>
         <Lottie
           className="justify-self-center mt-10 h-[40px] lg:mt-0 lg:h-[50px]"
