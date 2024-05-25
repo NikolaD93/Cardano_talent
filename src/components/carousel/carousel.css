@@ -23,8 +23,15 @@
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y pinch-zoom;
+  padding-inline: 20px;
   margin-left: calc(var(--slide-spacing) * -1);
 }
+@media (max-width: 750px) {
+  .embla__container {
+    padding-inline: 0;
+  }
+}
+
 @media (min-width: 750px) {
   .embla__container {
     margin-left: calc(var(--slide-spacing-sm) * -1);

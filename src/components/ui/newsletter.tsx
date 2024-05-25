@@ -1,7 +1,6 @@
 import { adaLogo } from "@/assets/images";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { MotionWrapper } from "../shared/MotionWrapper";
+import { NewsletterForm } from "../forms/NewsletterForm";
 
 export const Newsletter = () => {
   return (
@@ -15,16 +14,7 @@ export const Newsletter = () => {
               working now
             </p>
           </div>
-          <div className="flex relative z-10">
-            <Input type="email" placeholder="Enter your email" required />
-            <Button
-              className="bg-white rounded-full text-primary font-bold lg:w-[130px] h-[46px] lg:h-[56px] absolute right-[5px] top-[5px] transition duration-300 hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
-              variant="ghost"
-              type="submit"
-            >
-              Subscribe
-            </Button>
-          </div>
+          <NewsletterForm />
           <img
             className="absolute opacity-20 lg:static lg:opacity-100"
             src={adaLogo}
