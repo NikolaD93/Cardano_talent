@@ -16,8 +16,8 @@ export const Team = () => {
           This is our team
         </h2>
         <p className="text-center text-textColor mt-8 mb-[64px] lg:mb-[84px] max-w-[600px] mx-auto">
-          Let’s check your hash rate to see how much you will earn today.
-          Exercitation veniam consequat sunt nostrud amet.
+          Meet the awesome team members who bring creativity and expertise to
+          the table, playing a key role in shaping our platform's success.
         </p>
         <div className="relative">
           <Carousel options={OPTIONS} />

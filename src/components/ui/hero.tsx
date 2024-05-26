@@ -25,16 +25,19 @@ export const Hero = () => {
           <p className="text-xs md:text-sm">Read the latest from our blog</p>
           <FaArrowRightLong className="-translate-x-1 transition-all duration-200 ease-in-out group-hover:translate-x-0" />
         </Link>
-        <h1 className="text-[3rem] leading-[3.4rem] lg:text-[5rem] lg:leading-[5rem] font-bold my-6">
-          Unleash your{" "}
+        <h1 className="text-[3.4rem] leading-[3.4rem] lg:text-[6rem] lg:leading-[6rem] font-bold my-6">
+          The ultimate{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-blue-500 bg-opacity-50">
-            potential
+            Next-Gen
           </span>{" "}
-          with <br /> our matching platform
+          marketplace
         </h1>
-        <p className="text-textColor text-sm lg:text-lg max-w-[600px] mx-auto">
-          At Cardano Talent, we understand that in the rapidly evolving field of
-          blockchain and web3, finding the right talent is paramount.
+        <p className="text-textColor text-sm lg:text-lg max-w-[800px] mx-auto">
+          Our innovative platform offers secure, transparent, and efficient
+          hiring solutions, revolutionizing how employers connect with top
+          talent in the industry. Experience the future of recruitment with a
+          decentralized approach that ensures trust and efficiency in every
+          hire.
         </p>
       </motion.div>
       <motion.div

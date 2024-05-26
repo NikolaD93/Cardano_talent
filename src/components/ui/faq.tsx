@@ -26,33 +26,35 @@ export const Faq = () => {
             </h4>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                <AccordionTrigger>
+                  What services do you offer related to blockchain and
+                  cryptocurrency?
+                </AccordionTrigger>
                 <AccordionContent className="text-textColor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem itaque error dolor magnam assumenda ad saepe sint
-                  pariatur maiores fuga!
+                  We specialize in connecting companies with top-tier talent in
+                  the blockchain and cryptocurrency space, facilitating
+                  collaborations that drive innovation and success.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger>Is it styled?</AccordionTrigger>
+                <AccordionTrigger>
+                  How can Cardano's technology benefit my business or project?
+                </AccordionTrigger>
                 <AccordionContent className="text-textColor">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tempore velit, soluta dolor facere praesentium et quisquam
-                  quaerat sed necessitatibus excepturi, illum veritatis! Illum
-                  nam harum fugit error vitae corrupti quaerat voluptates ipsam
-                  odio autem eveniet sint, blanditiis laborum quo fuga commodi,
-                  accusantium doloribus aperiam! Corporis recusandae ducimus
-                  rerum cupiditate ipsa.
+                  Cardano's technology offers heightened security, scalability,
+                  and sustainability, enabling efficient and innovative
+                  solutions tailored to your business needs.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger>Is it animated?</AccordionTrigger>
+                <AccordionTrigger>
+                  How do you connect companies with blockchain and crypto
+                  talent?
+                </AccordionTrigger>
                 <AccordionContent className="text-textColor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime, vel similique sunt vitae minus eaque ipsum totam, quod
-                  ipsa odio iste voluptatem libero eius nulla neque obcaecati
-                  tenetur exercitationem autem, tempore expedita? Dolore dolor
-                  ipsam harum.
+                  We bridge the gap by matching companies with highly skilled
+                  blockchain and crypto professionals, ensuring the right fit
+                  for your project requirements.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

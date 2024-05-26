@@ -65,89 +65,73 @@ export const members = [
 export const team = [
   {
     id: 1,
-    name: "Filip Blagojevic",
+    name: "Filip",
     role: "Founder",
     about:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, delectus.",
+      "A seasoned Blockchain Consultant and Cardano Specialist with a deep technical background.",
     img: team1,
     socials: [
       {
-        logo: FaDiscord,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
         logo: FaXTwitter,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://x.com/filipblagojevi8",
       },
       {
         logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://www.linkedin.com/in/filipblagojevic",
       },
     ],
   },
   {
     id: 3,
-    name: "Djordje Stojmenovic",
+    name: "DJ",
     role: "Founder",
     about:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, delectus.",
+      "Blockchain Enthusiast with a unique blend of expertise in both marketing and technical aspects of the industry.",
     img: team3,
     socials: [
       {
-        logo: FaDiscord,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
         logo: FaXTwitter,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://x.com/Cardano_DJ",
       },
       {
         logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://www.linkedin.com/in/djordjestojmenovic/",
       },
     ],
   },
   {
     id: 4,
-    name: "Nikola Dojcinovic",
+    name: "Nikola",
     role: "Developer",
     about:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, delectus.",
+      "Skilled Frontend and Backend Ninja Developer, known for his exceptional coding prowess and versatility.",
     img: team4,
     socials: [
       {
-        logo: FaDiscord,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
         logo: FaXTwitter,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://x.com/dojc70100",
       },
       {
         logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://www.linkedin.com/in/nikoladojcinovic93/",
       },
     ],
   },
   {
     id: 5,
-    name: "Stefanija Spasic",
+    name: "Stef",
     role: "Creator",
     about:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, delectus.",
+      "Her artistic vision and attention to detail ensure that our projects not only stand out but also resonate deeply with our audience.",
     img: team5,
     socials: [
       {
-        logo: FaDiscord,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
-      },
-      {
         logo: FaXTwitter,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://x.com/___Stefanija___",
       },
       {
         logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filip-srdoc/",
+        link: "https://www.linkedin.com/in/stefanija-spasic/",
       },
     ],
   },
