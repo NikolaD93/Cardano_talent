@@ -9,7 +9,7 @@ import {
   team4,
   team5,
 } from "@/assets/images";
-import { FaDiscord, FaLinkedin } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const navLinks = [
@@ -114,6 +114,10 @@ export const team = [
       {
         logo: FaLinkedin,
         link: "https://www.linkedin.com/in/nikoladojcinovic93/",
+      },
+      {
+        logo: FaYoutube,
+        link: "https://www.youtube.com/@dojcinovic651",
       },
     ],
   },

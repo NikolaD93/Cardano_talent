@@ -16,13 +16,19 @@ export const Faq = () => {
         </h2>
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-0">
           <div className="lg:flex-[50%]">
-            <h4 className="mb-10 text-lg hidden lg:block">
+            <h4 className="mb-10 text-lg text-textColor hidden lg:block">
               Have a question that is not answered? <br /> You can contact us on
-              <span className="font-bold"> cardanotalent@gmail.com</span>
+              <span className="font-bold text-white">
+                {" "}
+                cardanotalent@gmail.com
+              </span>
             </h4>
-            <h4 className="mb-10 text-base text-center lg:hidden">
+            <h4 className="mb-14 text-base text-textColor text-center lg:hidden">
               Have a question that is not answered? You can contact us on
-              <span className="font-bold"> cardanotalent@gmail.com</span>
+              <span className="font-bold text-white">
+                {" "}
+                cardanotalent@gmail.com
+              </span>
             </h4>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">

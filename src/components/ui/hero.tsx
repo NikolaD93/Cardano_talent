@@ -14,7 +14,7 @@ export const Hero = () => {
       <motion.div
         whileInView={{ opacity: [0, 0.5, 1] }}
         transition={{ duration: 0.5 }}
-        className="text-center pt-[40px] md:pt-[86px]"
+        className="text-center pt-[60px] md:pt-[86px]"
       >
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-primary [mask-image:radial-gradient(circle_at_center,transparent_90%,black)] lg:[mask-image:radial-gradient(circle_at_center,transparent_50%,black)]"></div>
         <Link
