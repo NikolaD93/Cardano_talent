@@ -34,6 +34,51 @@ export const navLinks = [
   },
 ];
 
+export const about = [
+  {
+    title: "Specialized Focus on Crypto",
+    description:
+      "We specialize exclusively in the crypto industry, ensuring we understand the nuances and specific requirements of this rapidly evolving field. Our expertise allows us to find candidates with the right skills and knowledge to drive your business forward.",
+    number: "01",
+  },
+  {
+    title: "Proven Track Record",
+    description:
+      "With years of experience in crypto recruitment, we have helped numerous companies build strong teams that excel. Our success stories span various roles and levels, from developers and analysts to executives, showcasing our ability to deliver results consistently.",
+    number: "02",
+  },
+  {
+    title: "Quality Over Quantity",
+    description:
+      "We believe in the quality of candidates over the quantity of resumes. Our rigorous vetting process ensures that only the most qualified and suitable candidates are presented to you. This saves you time and helps you find the perfect fit for your organization.",
+    number: "03",
+  },
+  {
+    title: "Trust and Reliability",
+    description:
+      "Just like the trusted bookshop with excellent customer service, we have built our reputation on trust and reliability. Our clients return to us because they know we deliver what we promise — exceptional talent and unmatched service.",
+    number: "04",
+  },
+  {
+    title: "Tailored Solutions",
+    description:
+      "We understand that every company is unique. Our solutions are customized to meet your specific needs, whether you're a startup looking for foundational team members or an established company seeking to expand. We work closely with you to understand your culture, goals, and requirements.",
+    number: "05",
+  },
+  {
+    title: "Comprehensive Support",
+    description:
+      "From the initial consultation to onboarding, we provide comprehensive support throughout the hiring process. Our team is always available to assist you, ensuring a smooth and efficient experience.",
+    number: "06",
+  },
+  {
+    title: "Passion for Crypto",
+    description:
+      "Our passion for the crypto industry drives everything we do. We stay abreast of the latest trends and developments, ensuring that our knowledge is current and our approach is innovative. Your passion is our passion.",
+    number: "07",
+  },
+];
+
 export const members = [
   {
     id: "member1",
