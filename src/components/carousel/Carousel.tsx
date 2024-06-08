@@ -39,7 +39,7 @@ export const Carousel: React.FC<PropType> = (props) => {
                 <CardBody className="border bg-[rgba(255,255,255,0.05)] border-[rgba(255,255,255,.1)]  rounded-md p-6 w-[90%] md:w-full relative transition duration-300 hover:shadow-[0px_26px_46px_-35px_rgba(4,79,200,0.67)] hover:shadow-[0px 22px 37px -11px rgba(4,79,200,0.91)]">
                   <CardItem translateZ="60" className="w-full">
                     <img
-                      className="rounded-sm h-[300px] lg:h-[260px] w-full object-cover object-top"
+                      className="rounded-sm h-[300px] lg:h-[270px] w-full object-cover"
                       src={item.img}
                       alt={item.name}
                     />
