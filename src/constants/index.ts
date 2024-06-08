@@ -5,9 +5,9 @@ import {
   avatar4,
   avatar5,
   team1,
+  team2,
   team3,
   team4,
-  team5,
   circle,
   shape,
 } from "@/assets/images";
@@ -136,7 +136,7 @@ export const team = [
     role: "Founder",
     about:
       "Blockchain Enthusiast with a unique blend of expertise in both marketing and technical aspects of the industry.",
-    img: team3,
+    img: team2,
     socials: [
       {
         logo: FaXTwitter,
@@ -154,7 +154,7 @@ export const team = [
     role: "Developer",
     about:
       "Skilled Frontend and Backend Ninja Developer, known for his exceptional coding prowess and versatility.",
-    img: team4,
+    img: team3,
     socials: [
       {
         logo: FaXTwitter,
@@ -176,7 +176,7 @@ export const team = [
     role: "Creator",
     about:
       "Her artistic vision and attention to detail ensure that our projects not only stand out but also resonate deeply with our audience.",
-    img: team5,
+    img: team4,
     socials: [
       {
         logo: FaXTwitter,
