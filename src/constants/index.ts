@@ -8,6 +8,8 @@ import {
   team3,
   team4,
   team5,
+  circle,
+  shape,
 } from "@/assets/images";
 import { FaDiscord, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -46,6 +48,7 @@ export const about = [
     description:
       "With years of experience in crypto recruitment, we have helped numerous companies build strong teams that excel. Our success stories span various roles and levels, from developers and analysts to executives, showcasing our ability to deliver results consistently.",
     number: "02",
+    img: circle,
   },
   {
     title: "Quality Over Quantity",
@@ -70,6 +73,7 @@ export const about = [
     description:
       "From the initial consultation to onboarding, we provide comprehensive support throughout the hiring process. Our team is always available to assist you, ensuring a smooth and efficient experience.",
     number: "06",
+    img: shape,
   },
   {
     title: "Passion for Crypto",
