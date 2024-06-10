@@ -44,16 +44,16 @@ export const about = [
     number: "01",
   },
   {
-    title: "Proven Track Record",
+    title: "Quality Over Quantity",
     description:
-      "With years of experience in crypto recruitment, we have helped numerous companies build strong teams that excel. Our success stories span various roles and levels, from developers and analysts to executives, showcasing our ability to deliver results consistently.",
+      "We believe in the quality of candidates over the quantity of resumes. Our rigorous vetting process ensures that only the most qualified and suitable candidates are presented to you. This saves you time and helps you find the perfect fit for your organization.",
     number: "02",
     img: circle,
   },
   {
-    title: "Quality Over Quantity",
+    title: "Proven Track Record",
     description:
-      "We believe in the quality of candidates over the quantity of resumes. Our rigorous vetting process ensures that only the most qualified and suitable candidates are presented to you. This saves you time and helps you find the perfect fit for your organization.",
+      "With years of experience in crypto recruitment, we have helped numerous companies build strong teams that excel. Our success stories span various roles and levels, from developers and analysts to executives, showcasing our ability to deliver results consistently.",
     number: "03",
   },
   {
