@@ -4,7 +4,6 @@ import {
   avatar3,
   avatar4,
   avatar5,
-  team1,
   team2,
   team3,
   team4,
