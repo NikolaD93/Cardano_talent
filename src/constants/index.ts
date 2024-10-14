@@ -113,24 +113,6 @@ export const members = [
 
 export const team = [
   {
-    id: 1,
-    name: "Filip",
-    role: "Founder",
-    about:
-      "A seasoned Blockchain Consultant and Cardano Specialist with a deep technical background.",
-    img: team1,
-    socials: [
-      {
-        logo: FaXTwitter,
-        link: "https://x.com/filipblagojevi8",
-      },
-      {
-        logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/filipblagojevic",
-      },
-    ],
-  },
-  {
     id: 3,
     name: "DJ",
     role: "Founder",
