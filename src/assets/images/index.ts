@@ -5,7 +5,6 @@ import avatar4 from "./avatar4.jpg";
 import avatar5 from "./avatar5.jpg";
 import logo from "./logo.svg";
 import about from "./about.svg";
-import team1 from "./team1.png";
 import team2 from "./team2.png";
 import team3 from "./team3.png";
 import team4 from "./team4.png";
@@ -13,6 +12,7 @@ import faq from "./faq.svg";
 import adaLogo from "./ada_logo.svg";
 import circle from "./circle.png";
 import shape from "./shape.png";
+import team5 from "./team5.png";
 
 export {
   avatar1,
@@ -22,10 +22,10 @@ export {
   avatar5,
   logo,
   about,
-  team1,
   team2,
   team3,
   team4,
+  team5,
   faq,
   adaLogo,
   circle,

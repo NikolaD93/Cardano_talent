@@ -7,10 +7,11 @@ import {
   team2,
   team3,
   team4,
+  team5,
   circle,
   shape,
 } from "@/assets/images";
-import { FaDiscord, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaYoutube, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const navLinks = [
@@ -112,7 +113,7 @@ export const members = [
 
 export const team = [
   {
-    id: 3,
+    id: 1,
     name: "DJ",
     role: "Founder",
     about:
@@ -130,7 +131,25 @@ export const team = [
     ],
   },
   {
-    id: 4,
+    id: 2,
+    name: "Stef",
+    role: "Creator",
+    about:
+      "Her artistic vision and attention to detail ensure that our projects not only stand out but also resonate deeply with our audience.",
+    img: team4,
+    socials: [
+      {
+        logo: FaXTwitter,
+        link: "https://x.com/___Stefanija___",
+      },
+      {
+        logo: FaLinkedin,
+        link: "https://www.linkedin.com/in/stefanija-spasic/",
+      },
+    ],
+  },
+  {
+    id: 3,
     name: "Nikola",
     role: "Developer",
     about:
@@ -152,20 +171,20 @@ export const team = [
     ],
   },
   {
-    id: 5,
-    name: "Stef",
-    role: "Creator",
+    id: 4,
+    name: "IPRO",
+    role: "Developer",
     about:
-      "Her artistic vision and attention to detail ensure that our projects not only stand out but also resonate deeply with our audience.",
-    img: team4,
+      "Passionate Blockchain Engineer focused on building innovative and scalable Web3 experiences.",
+    img: team5,
     socials: [
       {
         logo: FaXTwitter,
-        link: "https://x.com/___Stefanija___",
+        link: "https://x.com/ipr0310",
       },
       {
-        logo: FaLinkedin,
-        link: "https://www.linkedin.com/in/stefanija-spasic/",
+        logo: FaGithub,
+        link: "https://github.com/ipr0310",
       },
     ],
   },
