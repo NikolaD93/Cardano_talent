@@ -135,7 +135,7 @@ export const team = [
     name: "Stef",
     role: "Creator",
     about:
-      "Her artistic vision and attention to detail ensure that our projects not only stand out but also resonate deeply with our audience.",
+      "Her vision and attention to detail ensure that our projects not only stand out but also resonate deeply with our audience.",
     img: team4,
     socials: [
       {
